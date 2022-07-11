@@ -23,7 +23,7 @@ router.post("/pickup_order", order_picked);
 
 //Get Routers
 //router.get("/requests", pickup_requests);
-router.get("/home", home);
+router.get("/", home);
 router.get("/getUser", get_user);
 router.get("/getPersonalOrders", get_personal_orders);
 router.get("/allOrders", all_orders);
