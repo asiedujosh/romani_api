@@ -3,8 +3,7 @@ const Users = require("../models/Users");
 //Get Login Data
 const GetUser = async (req, res) => {
   //const { phoneNo } = req.body;
-  let id = req.query.id.replaceAll(" ", "");
-  let PhoneNo = `+${id}`;
+  let PhoneNo = req.query.id;
   try {
     const user = await Users.findOne({ PhoneNo })
       .then((user) => {
