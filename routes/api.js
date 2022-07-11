@@ -4,6 +4,7 @@ const sign_in = require("../controllers/login");
 const pick_up = require("../controllers/pickup");
 const drop_off = require("../controllers/drop_off");
 const get_user = require("../controllers/getclient");
+const home = require("../controllers/home");
 const all_orders = require("../controllers/all_orders");
 const order_picked = require("../controllers/order_picked");
 const get_personal_orders = require("../controllers/getpersonal_orders");
@@ -22,6 +23,7 @@ router.post("/pickup_order", order_picked);
 
 //Get Routers
 //router.get("/requests", pickup_requests);
+router.get("/home");
 router.get("/getUser", get_user);
 router.get("/getPersonalOrders", get_personal_orders);
 router.get("/allOrders", all_orders);
