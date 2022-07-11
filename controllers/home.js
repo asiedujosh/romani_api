@@ -1,5 +1,5 @@
 const Home = (req, res) => {
-  res.status(200).send("Welcome to Rhemi Api");
+  res.status(201).send("Welcome to Rhemi Api");
 };
 
 module.exports = Home;

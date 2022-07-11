@@ -5,7 +5,6 @@ const authRoute = require("./routes/api");
 const mongoose = require("mongoose");
 const port = process.env.PORT || 8080;
 
-//const mongoURI = "";
 //const mongoURI = "mongodb://localhost:27017/Romani";
 const mongoURI =
   "mongodb+srv://romani:Katalambano90@romani.9vonhop.mongodb.net/?retryWrites=true&w=majority";
